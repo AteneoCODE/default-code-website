@@ -1,4 +1,4 @@
-.ServicesView {
+/* .ServicesView {
   display: grid;
   grid-template-columns: 23vw auto 23vw;
   grid-template-areas:
@@ -38,7 +38,7 @@
   color: #06192f;
 }
 
-/* Format the headers */
+
 .ServicesView :is(h1, h2, h3, h4, h5, h6) {
   font-family: Unna;
   text-align: left;
@@ -46,4 +46,4 @@
 
 .ServicesView .services * {
   flex-basis: 100%;
-}
+} */

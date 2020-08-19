@@ -1,0 +1,25 @@
+.MainScreen > .view {
+  display: grid;
+  grid-template-columns: 23vw auto 23vw;
+  grid-template-areas:
+    "padding-left Content padding-right"
+    "padding-left Content padding-right";
+}
+
+/* General styles */
+
+.MainScreen :is(h1, h2, h3, h4, h5, h6) {
+  font-family: Unna;
+  text-align: left;
+}
+
+.MainScreen p {
+  text-align: left;
+  font-family: Source Sans Pro;
+  line-height: 1.5;
+}
+
+.MainScreen span {
+  display: flex;
+  flex-direction: row;
+}

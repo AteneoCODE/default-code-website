@@ -3,7 +3,7 @@ import "./ContactView.css";
 
 const ContactView: React.FC = (props) => {
   return (
-    <div className="ContactView">
+    <div className="view">
       <span className="padding-left" />
       <div className="content">
         <span style={{ flexDirection: "column" }}>

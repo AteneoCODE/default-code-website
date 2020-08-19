@@ -8,7 +8,7 @@ import hv3 from "../../assets/hv3.jpg";
 
 const HomeView: React.FC = (props) => {
   return (
-    <div className="HomeView">
+    <div className="view HomeView">
       <span className="padding-left" />
       <div className="content">
         <h1>What is Ateneo CODE?</h1>
@@ -32,7 +32,7 @@ const HomeView: React.FC = (props) => {
           <img src={hv3} alt="hv3" width="320" height="213" />
         </span>
         <span>
-          <div className="vision-mission-item">
+          <div className="vision-mission-item" style={{ flexBasis: "100%" }}>
             <h2 style={{ textAlign: "left" }}>Vision</h2>
             <p style={{ justifySelf: "flex-start" }}>
               We, the Ateneo Consultants for Organization Development and
@@ -44,7 +44,7 @@ const HomeView: React.FC = (props) => {
               within the community.
             </p>
           </div>
-          <div className="vision-mission-item">
+          <div className="vision-mission-item" style={{ flexBasis: "100%" }}>
             <h2 style={{ textAlign: "left" }}>Mission</h2>
             <p style={{ justifySelf: "flex-start" }}>
               Our mission is to empower the youth to continually develop their

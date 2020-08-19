@@ -4,7 +4,7 @@ import xv1 from "../../assets/xv1.jpg";
 
 const XChangeView: React.FC = (props) => {
   return (
-    <div className="XChangeView">
+    <div className="view">
       <span className="padding-left" />
       <div className="content">
         <span style={{ flexDirection: "column" }}>

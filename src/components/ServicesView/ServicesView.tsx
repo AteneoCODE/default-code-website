@@ -3,7 +3,7 @@ import "./ServicesView.css";
 
 const ServicesView: React.FC = (props) => {
   return (
-    <div className="ServicesView">
+    <div className="view">
       <span className="padding-left" />
       <div className="content">
         <span style={{ flexDirection: "column" }}>
@@ -17,7 +17,7 @@ const ServicesView: React.FC = (props) => {
           </p>
         </span>
         <span className="services">
-          <div className="headed-text" style={{ flexGrow: 1 }}>
+          <div className="headed-text" style={{ flexBasis: 1, flexGrow: 1 }}>
             <h2>Short-Term Engagements</h2>
             <p>
               Short-Term Engagements are engagements that aim to train, develop
@@ -30,7 +30,7 @@ const ServicesView: React.FC = (props) => {
             </p>
           </div>
           <span style={{ flexBasis: "5%", flexGrow: 0.1 }} />
-          <div className="headed-text" style={{ flexGrow: 1 }}>
+          <div className="headed-text" style={{ flexBasis: 1, flexGrow: 1 }}>
             <h2>Long-Term Engagements</h2>
             <p>
               Long-Term Engagements are engagements that tackle structural
@@ -43,7 +43,7 @@ const ServicesView: React.FC = (props) => {
             </p>
           </div>
           <span style={{ flexBasis: "5%", flexGrow: 0.1 }} />
-          <div className="headed-text" style={{ flexGrow: 1 }}>
+          <div className="headed-text" style={{ flexBasis: 1, flexGrow: 1 }}>
             <h2>Consultancy Teams</h2>
             <p>
               Consultancy Teams are engagements that focus on
