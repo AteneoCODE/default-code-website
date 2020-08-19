@@ -1,0 +1,49 @@
+.ServicesView {
+  display: grid;
+  grid-template-columns: 23vw auto 23vw;
+  grid-template-areas:
+    "padding-left Content padding-right"
+    "padding-left Content padding-right";
+}
+
+.ServicesView .padding-left {
+  grid-area: "padding-left";
+}
+
+.ServicesView .padding-right {
+  grid-area: "padding-right";
+}
+
+.ServicesView .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.ServicesView .content span {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+
+.ServicesView .content h1 {
+  font-family: Unna;
+  color: #06192f;
+}
+
+.ServicesView .content p {
+  font-family: Source Sans Pro;
+  line-height: 1.5;
+  text-align: left;
+  color: #06192f;
+}
+
+/* Format the headers */
+.ServicesView :is(h1, h2, h3, h4, h5, h6) {
+  font-family: Unna;
+  text-align: left;
+}
+
+.ServicesView .services * {
+  flex-basis: 100%;
+}

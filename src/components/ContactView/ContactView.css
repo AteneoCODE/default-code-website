@@ -1,0 +1,54 @@
+.ContactView {
+  display: grid;
+  grid-template-columns: 23vw auto 23vw;
+  grid-template-areas:
+    "padding-left Content padding-right"
+    "padding-left Content padding-right";
+}
+
+.ContactView .padding-left {
+  grid-area: "padding-left";
+}
+
+.ContactView .padding-right {
+  grid-area: "padding-right";
+}
+
+.ContactView .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.ContactView .content span {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+
+.ContactView .content h1 {
+  font-family: Unna;
+  color: #06192f;
+}
+
+.ContactView .content p {
+  font-family: Source Sans Pro;
+  line-height: 1.5;
+  text-align: left;
+  color: #06192f;
+}
+
+/* Format the headers */
+.ContactView :is(h1, h2, h3, h4, h5, h6) {
+  font-family: Unna;
+  text-align: left;
+}
+
+/* For the Vision Mission  */
+.ContactView div.vision-mission-item {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  justify-content: flex-start;
+}

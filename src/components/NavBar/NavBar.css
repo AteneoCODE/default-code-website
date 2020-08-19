@@ -1,0 +1,41 @@
+.NavBar {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  min-height: 10vh;
+  flex-direction: column;
+  background-color: #06192f;
+  padding: 1vh 0 4vh 0;
+}
+
+.NavBar .title {
+  font-family: Unna;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.NavBar .subtitle {
+  font-family: Unna;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.NavBar .flex-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.NavBar .flex-bottom button {
+  border: none;
+  font-family: Source Sans Pro;
+  font-weight: bold;
+  background-color: inherit;
+  color: #ffffff;
+  margin: 14px 28px;
+}
+
+.NavBar .flex-bottom button:hover {
+  color: #aaafb5;
+  cursor: pointer;
+}

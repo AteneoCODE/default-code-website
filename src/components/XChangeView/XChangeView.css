@@ -1,0 +1,49 @@
+.XChangeView {
+  display: grid;
+  grid-template-columns: 23vw auto 23vw;
+  grid-template-areas:
+    "padding-left Content padding-right"
+    "padding-left Content padding-right";
+}
+
+.XChangeView .padding-left {
+  grid-area: "padding-left";
+}
+
+.XChangeView .padding-right {
+  grid-area: "padding-right";
+}
+
+.XChangeView .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.XChangeView .content span {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+
+.XChangeView .content h1 {
+  font-family: Unna;
+  color: #06192f;
+}
+
+.XChangeView .content p {
+  font-family: Source Sans Pro;
+  line-height: 1.5;
+  text-align: left;
+  color: #06192f;
+}
+
+/* Format the headers */
+.XChangeView :is(h1, h2, h3, h4, h5, h6) {
+  font-family: Unna;
+  text-align: left;
+}
+
+.XChangeView .services * {
+  flex-basis: 100%;
+}
