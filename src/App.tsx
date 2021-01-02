@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
-import MainScreen from "./components/MainScreen/MainScreen";
+import ExternalContentScreen from "./components/ExternalContentScreen/ExternalContentScreen";
 
 const App: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const App: React.FC = () => {
       <div className="App">
         <div className="master-grid">
           <NavBar />
-          <MainScreen />
+          <ExternalContentScreen />
           <Footer />
         </div>
       </div>

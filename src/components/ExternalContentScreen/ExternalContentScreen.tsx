@@ -1,15 +1,18 @@
 import React from "react";
-import "./MainScreen.css";
+import "./ExternalContentScreen.css";
 import { Switch, Route } from "react-router-dom";
 import HomeView from "../HomeView/HomeView";
 import ServicesView from "../ServicesView/ServicesView";
 import XChangeView from "../XChangeView/XChangeView";
 import ContactView from "../ContactView/ContactView";
 
-const MainScreen: React.FC = (props) => {
+const ExternalContentScreen: React.FC = () => {
   return (
     <div className="MainScreen">
       <Switch>
+        <Route exact path="/">
+          <HomeView />
+        </Route>
         <Route exact path="/about">
           <HomeView />
         </Route>
@@ -22,12 +25,9 @@ const MainScreen: React.FC = (props) => {
         <Route exact path="/contact">
           <ContactView />
         </Route>
-        <Route path="/">
-          <HomeView />
-        </Route>
       </Switch>
     </div>
   );
 };
 
-export default MainScreen;
+export default ExternalContentScreen;

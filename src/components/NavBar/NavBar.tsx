@@ -1,6 +1,7 @@
 import React from "react";
 import "./NavBar.css";
 import { useHistory } from "react-router-dom";
+import { Button } from "@material-ui/core";
 
 const NavBar: React.FC = (props) => {
   let history = useHistory();
@@ -15,41 +16,21 @@ const NavBar: React.FC = (props) => {
         Consultants for Organization Development and Empowerment
       </h3>
       <span className="flex-bottom">
-        <button
-          onClick={() => {
-            routeTo("/");
-          }}
-        >
+        <Button variant="text" onClick={() => routeTo("/")}>
           Home
-        </button>
-        <button
-          onClick={() => {
-            routeTo("/about");
-          }}
-        >
-          About Us
-        </button>
-        <button
-          onClick={() => {
-            routeTo("/services");
-          }}
-        >
+        </Button>
+        <Button variant="text" onClick={() => routeTo("/about")}>
+          About
+        </Button>
+        <Button variant="text" onClick={() => routeTo("/services")}>
           Our Services
-        </button>
-        <button
-          onClick={() => {
-            routeTo("/xchange");
-          }}
-        >
+        </Button>
+        <Button variant="text" onClick={() => routeTo("/xchange")}>
           XChange
-        </button>
-        <button
-          onClick={() => {
-            routeTo("/contact");
-          }}
-        >
-          Contact Us
-        </button>
+        </Button>
+        <Button variant="text" onClick={() => routeTo("/contact")}>
+          Contact
+        </Button>
       </span>
     </div>
   );

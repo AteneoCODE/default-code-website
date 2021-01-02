@@ -27,9 +27,9 @@ const HomeView: React.FC = (props) => {
           </p>
         </span>
         <span style={{ justifyContent: "space-between" }}>
-          <img src={hv1} alt="group discussion" width="320" height="213" />
-          <img src={hv2} alt="hv2" width="320" height="213" />
-          <img src={hv3} alt="hv3" width="320" height="213" />
+          <img src={hv1} alt="group discussion" style={{ maxWidth: "33%" }} />
+          <img src={hv2} alt="hv2" style={{ maxWidth: "33%" }} />
+          <img src={hv3} alt="hv3" style={{ maxWidth: "33%" }} />
         </span>
         <span>
           <div className="vision-mission-item" style={{ flexBasis: "100%" }}>
